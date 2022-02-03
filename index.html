@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Whatodo???</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script></head>
+  <body>
+      <div id="content">
+          
+        <div id="side-bar">
+            
+            <div id="create-todo">
+                <button id="create-todo-btn"><span><i class="fas fa-plus-square"></i> Create a task</span></button>
+            </div>
+
+            <div id="navigation">
+                <ul id="shortcuts">
+                    <h1>Shortcuts</h1>
+                    <li id="today-div">Today</li>
+                    <li id="next7days-div">Next 7 Days</li>
+                    <li id="alltasks-div">All Tasks</li>
+                </ul>
+                <ul id="projects">
+                    <h1>Projects</h1>
+                    <li id="personal-project">Personal</li>
+                    <li id="work-project">Work</li>
+                    <li id="grocery-list">Grocery List</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="main-container">
+            
+            <div id="greetings">
+                <span>GoodEvening, dear.</span>
+            </div>
+
+            <div id="view-todos">
+
+                <ul id="todo-list">
+
+                    <div class="todo checked">
+                        <li class="checkbox"><i class="fas fa-check-square" style="color:green"></i></li>
+                        <li class="todo-item">Buy crypto??</li>
+                        <button class="delete-btn"><i class="far fa-trash-alt"></i></button>
+                    </div>
+
+                    <div class="todo">
+                        <li class="checkbox"><i class="fas fa-check-square" style="color:green"></i></li>
+                        <li class="todo-item">Sure why not??</li>
+                        <button class="delete-btn"><i class="far fa-trash-alt"></i></button>
+                    </div>
+
+                    <div class="todo">
+                        <li class="checkbox"><i class="fas fa-check-square" style="color:green"></i></li>
+                        <li class="todo-item">But isn't it illegal??</li>
+                        <button class="delete-btn"><i class="far fa-trash-alt"></i></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <form id="set-todo"><!--active-->
+            <input type="text" id="title" placeholder="I want to...">
+            <div id="notes-div">
+                <label for="notes">NOTES</label><br>
+                <input type="text" id="notes" placeholder="Insert your notes here">
+            </div>
+            <div id="date-div">
+                <label for="dateset">DATE</label><br>
+                <input type="date" id="dateset">
+            </div>
+            <div id="projectset-div">
+                <label for="projectset">PROJECT</label><Br>
+                <select name="projectset" id="projectset">
+                    <option>Personal</option>
+                    <option>Work</option>
+                    <option>Grocery list</option>
+                </select>
+            </div>
+            <button id="submit" type="submit">Submit entry</button>
+        </form>
+        <div id="overlay"></div><!--active-->
+
+        <div id="view-todo">
+            <div id="viewtodo-title">Hello there good sire</div>
+            <div>
+                <div id="viewtodo-projectname-label">PROJECT</div>
+                <div id="viewtodo-projectname">Personal</div>
+            </div>
+            <div>
+                <div id="viewtodo-notes-label">NOTES</div>
+                <div id="viewtodo-notes">I just wanted to say hi</div>
+            </div>
+            <div>
+                <div id="viewtodo-date-label">CREATED</div>
+                <div id="viewtodo-date">2022/01/02</div>
+            </div>
+        </div>
+        <div id="overlaydisplay"></div>
+
+      </div>
+  </body>
+</html>
