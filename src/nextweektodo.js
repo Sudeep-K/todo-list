@@ -24,7 +24,8 @@ function viewtodonextweek() {
 
     todo_objs.forEach(element => {
         let element_date = new Date(element.date);
-        let difference_days = differenceInCalendarDays(today, element_date);
+        let difference_days = parseInt(differenceInCalendarDays(element_date, today));
+        console.log(difference_days);
         if (difference_days > 0 && difference_days < 8) {
             displaytodo(element);
         }
